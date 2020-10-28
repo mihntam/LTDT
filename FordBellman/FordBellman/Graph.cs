@@ -71,5 +71,19 @@ namespace FordBellman
 
             // ham xu ly de lay kq
         }
+
+        public void ConvertMatrix(WeightMatrix M)
+        {
+            int numOfVetices = M.iMatrix.GetLength(0);
+            int numOfEdges = M.iMatrix.GetLength(1);
+            
+            for (int i = 0; i < numOfVetices; i++)
+            {
+                for (int j = 0; j < numOfVetices; j++)
+                {
+                    M.iMatrix[i, j] = this.edgeArray[numOfEdges].iWeight;
+                }
+            }
+        }
     }
 }
