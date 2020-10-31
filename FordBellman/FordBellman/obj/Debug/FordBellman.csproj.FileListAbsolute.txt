@@ -1,0 +1,9 @@
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\bin\Debug\FordBellman.exe.config
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\bin\Debug\FordBellman.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\bin\Debug\FordBellman.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.csprojAssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Khoa\LTDT\FordBellman\FordBellman\obj\Debug\FordBellman.pdb
