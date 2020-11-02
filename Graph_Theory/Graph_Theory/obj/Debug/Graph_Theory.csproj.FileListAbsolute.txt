@@ -1,0 +1,10 @@
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.exe.config
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csprojAssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.Form1.resources
