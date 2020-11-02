@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,17 +25,113 @@ namespace FordBellman
     class WeightMatrix
     {
         int _iDinh { get; set; }
+        int[] _iLuuVet;
+        int[] _iVisited;
         public int [,] _iMatrix;
-
+        Queue<int> result = new Queue<int>(0);
         public void setValue(int so_dinh, int[,] ma_tran)
         {
             _iDinh = so_dinh;
             _iMatrix = ma_tran;
         }
 
-        public void getDFS()
+        void DFS(int start)
         {
+            this._iVisited[start] = 1;
 
+            for (int i = 0; i < this._iDinh; i++)
+            {
+                if (this._iVisited[i] == 0 && this._iMatrix[start,i] != 0)
+                {
+                    this._iLuuVet[i] = start; // Luu vi tri truoc i la s
+                    DFS(i);
+                }
+            }
+        }
+        /// <summary>
+        /// Goi ham tra ve Queue ds DFS
+        /// </summary>
+        /// <param name="s"></param> Dinh dau
+        /// <param name="f"></param> DInh cuoi
+        /// <returns></returns>
+        public Queue<int> getDFS(int s, int f)
+        {
+            //Khoi tao gia tri dau
+            for (int i = 0; i < this._iDinh; i++)
+            {
+                this._iVisited[i] = 0;
+                this._iLuuVet[i] = -1;
+            }
+
+            DFS(s);
+
+            if (this._iVisited[f] == 1)
+            {
+                int j = f;
+                while( j!= s)
+                {
+                    result.Enqueue(j);
+                    j = this._iLuuVet[j];
+                }
+
+            }
+            else
+            {
+                return result;
+            }
+            return result;
+        }
+        /// <summary>
+        /// Thuat toam BFS
+        /// </summary>
+        /// <param name="s"></param> Dinh bat dau
+        void BFS(int s)
+        {
+            Queue<int> tmp = new Queue<int>(0);
+            tmp.Enqueue(s);
+            
+            while (tmp.Count != 0)
+            {
+                this._iVisited[s] = 1;
+                for (int i = 0; i < this._iDinh; i++)
+                {
+                    if (this._iVisited[i] == 0 && this._iMatrix[s,i] != 0)
+                    {
+                        tmp.Enqueue(i);
+                        this._iLuuVet[i] = s;
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// Tra ve Queu BFS
+        /// </summary>
+        /// <param name="s"></param> Dinh dau
+        /// <param name="f"></param> Dinh cuoi
+        /// <returns></returns>
+        public Queue<int> getBFS(int s, int f)
+        {
+            for (int i = 0; i < this._iDinh; i++)
+            {
+                this._iLuuVet[i] = 0;
+                this._iVisited[i] = -1;
+            }
+                BFS(s);
+
+            if (this._iVisited[f] == 1)
+            {
+                int j = f;
+                while (j != s)
+                {
+                    result.Enqueue(j);
+                    j = this._iLuuVet[j];
+                }
+            }
+            else
+            {
+                return result;
+            }
+            return result;
         }
     };
     /// <summary>
@@ -88,7 +186,9 @@ namespace FordBellman
                     int v = graph._eEdge[j]._iDinhCuoi; // dinh vao v
                     int _iTrongSo = graph._eEdge[j]._iTrongSo;
                     if (iKhoanCach[u] != int.MaxValue && iKhoanCach[u] + _iTrongSo < iKhoanCach[v])
+                    {
                         iKhoanCach[v] = iKhoanCach[u] + _iTrongSo;
+                    }
                 }
             }
 
@@ -100,10 +200,11 @@ namespace FordBellman
                 int _iTrongSo = graph._eEdge[j]._iTrongSo;
                 if (iKhoanCach[u] != int.MaxValue && iKhoanCach[u] + _iTrongSo < iKhoanCach[v])
                 {
+                    /// out do thi co chu trinh am;
                     return;
                 }
             }
+            //out list<>=
         }
-
     }
 }
