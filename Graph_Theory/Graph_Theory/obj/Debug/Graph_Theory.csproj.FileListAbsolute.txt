@@ -8,13 +8,3 @@ C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_The
 C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.exe
 C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.pdb
 C:\Users\ADMIN\OneDrive\Máy tính\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.Form1.resources
-D:\C#\LTDT\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.exe.config
-D:\C#\LTDT\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.exe
-D:\C#\LTDT\Graph_Theory\Graph_Theory\bin\Debug\Graph_Theory.pdb
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csprojAssemblyReference.cache
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.Form1.resources
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.Properties.Resources.resources
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csproj.GenerateResource.cache
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.csproj.CoreCompileInputs.cache
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.exe
-D:\C#\LTDT\Graph_Theory\Graph_Theory\obj\Debug\Graph_Theory.pdb

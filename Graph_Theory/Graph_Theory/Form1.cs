@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -592,7 +594,7 @@ namespace Graph_Theory
                     }
                 }
                 n_Point_Dinh = temp;
-                if (kiem_Tra_Tinh_Hop_Le_Cua_Ma_Tran())
+                if (kiem_Tra_Tinh_Hop_Le_Cua_Ma_Tran() && kiem_Tra_Do_Thi_Vo_Huong())
                 {
                     n_Point_Dinh = 0;
                     Random rd = new Random();
